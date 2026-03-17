@@ -221,6 +221,28 @@ export default function Page() {
           </div>
         )}
 
+        {/* 부동산 중개수수료란? */}
+        <div className={styles.infoSection}>
+          <h2 className={styles.infoTitle}>
+            <HelpCircle size={20} className={styles.infoIcon} />
+            부동산 중개수수료란?
+          </h2>
+          <div className={styles.infoContent}>
+            <p>
+              <strong>부동산 중개수수료</strong>(흔히 '복비'라고 함)는 부동산 거래 시 공인중개사가 계약을 중개하고 성사시킨 대가로 받는 보수입니다. 계약서 작성부터 물건 확인, 권리 관계 분석 등 안전한 거래를 돕는 서비스에 대한 비용입니다.
+            </p>
+            <p>
+              누가 내나요? <strong>매도인과 매수인(또는 임대인과 임대차인) 쌍방</strong>이 각각 지급하는 것이 원칙입니다.
+            </p>
+            <p>
+              언제 내나요? 보통 <strong>잔금 지불일</strong>에 지급하지만, 계약 시 별도 약정이 있다면 그에 따릅니다.
+            </p>
+            <p>
+              협의가 가능한가요? 네, 법으로 정해진 요율은 <strong>상한 요율</strong>일 뿐입니다. 한도 내에서 공인중개사와 미리 협의하여 금액을 조정할 수 있습니다.
+            </p>
+          </div>
+        </div>
+
         {/* 안내 */}
         <div className={styles.warning} style={{ marginBottom: 16 }}>
           <AlertTriangle size={16} className={styles.warningIcon} />

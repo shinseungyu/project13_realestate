@@ -215,6 +215,48 @@
   margin: 0;
 }
 
+/* Info Section */
+.infoSection {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.infoTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.infoIcon {
+  color: var(--primary);
+}
+
+.infoContent {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.infoContent p {
+  margin: 0 0 12px;
+}
+
+.infoContent p:last-child {
+  margin-bottom: 0;
+}
+
+.infoContent strong {
+  color: var(--text-primary);
+}
+
 /* Result Card */
 .resultCard {
   background: var(--bg-card);
