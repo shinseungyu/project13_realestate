@@ -47,6 +47,11 @@ export const metadata: Metadata = {
     address: false,
     email: false,
   },
+  verification: {
+    other: {
+      'naver-site-verification': '01da215d01b04d9a8c6e6c0387a766482c988163',
+    },
+  },
 }
 
 export default function RootLayout({
