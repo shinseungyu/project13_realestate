@@ -126,6 +126,19 @@ export default function RootLayout({
     <html lang="ko" suppressHydrationWarning>
       <head>
         <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-H0BDK8VQLR"
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-H0BDK8VQLR');
+          `}
+        </Script>
+        <Script
           id="json-ld"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
