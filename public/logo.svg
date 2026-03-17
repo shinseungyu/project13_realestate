@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none">
+  <!-- House icon -->
+  <g>
+    <!-- Roof -->
+    <polygon points="4,18 20,4 36,18" fill="#2563eb"/>
+    <!-- Body -->
+    <rect x="7" y="18" width="26" height="18" rx="2" fill="#2563eb"/>
+    <!-- Door -->
+    <rect x="15" y="26" width="10" height="10" rx="1.5" fill="white"/>
+    <!-- Window -->
+    <rect x="10" y="20" width="7" height="6" rx="1" fill="white" opacity="0.6"/>
+    <rect x="23" y="20" width="7" height="6" rx="1" fill="white" opacity="0.6"/>
+  </g>
+  <!-- Estioo text -->
+  <text x="46" y="28" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.5" fill="#111827">Estioo</text>
+</svg>
