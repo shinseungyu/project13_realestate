@@ -377,6 +377,10 @@ export default function Page() {
                 q: "오피스텔 중개수수료 요율은 주택과 다른가요?",
                 a: "주거용 오피스텔(전용면적 85㎡ 이하)은 매매 0.5%, 임대차 0.4% 상한이 적용됩니다. 업무용(비주거용) 오피스텔은 거래금액의 0.9% 이내에서 협의합니다.",
               },
+              {
+                q: "2026년 부동산 중개수수료 개편 내용이 있나요?",
+                a: "2026년 현재 중개수수료 요율은 2021년 개편 기준이 유지되고 있습니다. 9억원 이상 고가 주택의 상한 요율이 기존보다 낮아진 구조로, 매매 9억~12억원 0.5%, 12억~15억원 0.6%, 15억원 이상 0.7%가 적용됩니다. 정확한 수수료는 위 계산기에서 바로 확인하세요.",
+              },
             ].map((item, i) => (
               <div key={i} style={{ background: "var(--bg-card)", padding: "20px", borderRadius: "8px", border: "1px solid var(--border-color)" }}>
                 <h3 style={{ fontSize: "16px", margin: "0 0 8px 0", color: "var(--text-primary)" }}>
