@@ -395,6 +395,23 @@ export default function Page() {
           </div>
         </article>
 
+        {/* 유용한 관련 사이트 */}
+        <article style={{ marginTop: "40px", paddingTop: "32px", borderTop: "1px solid var(--border-color)" }}>
+          <h2 style={{ fontSize: "18px", fontWeight: "700", marginBottom: "16px", color: "var(--text-primary)" }}>유용한 관련 사이트</h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "12px" }}>
+            <a href="https://importtaxcalc.com" target="_blank" rel="noopener noreferrer" style={{ display: "block", padding: "16px", background: "var(--bg-card)", border: "1px solid var(--border-color)", borderRadius: "10px", textDecoration: "none", transition: "border-color 0.2s" }}>
+              <div style={{ fontSize: "24px", marginBottom: "8px" }}>🛃</div>
+              <p style={{ margin: "0 0 4px", fontSize: "14px", fontWeight: "700", color: "var(--text-primary)" }}>해외직구 관세 계산기</p>
+              <p style={{ margin: 0, fontSize: "12px", color: "var(--text-secondary)" }}>미국·일본·중국 등 7개국 실시간 환율 기반 관부가세 자동 계산</p>
+            </a>
+            <a href="https://www.nailstartup.com/" target="_blank" rel="noopener noreferrer" style={{ display: "block", padding: "16px", background: "var(--bg-card)", border: "1px solid var(--border-color)", borderRadius: "10px", textDecoration: "none", transition: "border-color 0.2s" }}>
+              <div style={{ fontSize: "24px", marginBottom: "8px" }}>💅</div>
+              <p style={{ margin: "0 0 4px", fontSize: "14px", fontWeight: "700", color: "var(--text-primary)" }}>네일 창업 정보</p>
+              <p style={{ margin: 0, fontSize: "12px", color: "var(--text-secondary)" }}>네일샵 창업부터 운영까지 실전 정보 제공</p>
+            </a>
+          </div>
+        </article>
+
         {/* 관련 계산기 */}
         <article style={{ marginTop: "40px", paddingTop: "32px", borderTop: "1px solid var(--border-color)" }}>
           <h2 style={{ fontSize: "18px", fontWeight: "700", marginBottom: "16px", color: "var(--text-primary)" }}>관련 부동산 계산기</h2>
