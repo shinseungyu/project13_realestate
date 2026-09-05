@@ -434,17 +434,7 @@ export default function CapitalGainsTaxPage() {
           </div>
         </article>
 
-        {/* 푸터 */}
-        <footer style={{ marginTop: "24px", paddingTop: "16px", borderTop: "1px solid var(--border-color)", textAlign: "center" }}>
-          <nav style={{ display: "flex", justifyContent: "center", gap: "20px", flexWrap: "wrap" }}>
-            <a href="/privacy-policy" style={{ fontSize: "12px", color: "var(--text-muted)", textDecoration: "none" }}>개인정보 처리방침</a>
-            <a href="/terms-of-service" style={{ fontSize: "12px", color: "var(--text-muted)", textDecoration: "none" }}>이용약관</a>
-            <a href="/cookie-policy" style={{ fontSize: "12px", color: "var(--text-muted)", textDecoration: "none" }}>쿠키 정책</a>
-          </nav>
-          <p style={{ marginTop: "8px", fontSize: "11px", color: "var(--text-muted)" }}>
-            © 2026 · 문의: tlsfkaus0711@gmail.com
-          </p>
-        </footer>
+        {/* 푸터는 app/layout.tsx 의 SiteFooter 로 통합 */}
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import { Geist } from 'next/font/google'
+import SiteFooter from '@/components/SiteFooter'
 import './globals.css'
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-geist' })
@@ -126,6 +127,15 @@ export default function RootLayout({
     <html lang="ko" suppressHydrationWarning>
       <head>
         <meta name="google-adsense-account" content="ca-pub-5378247298190063" />
+        {/* 광고 로더. 계정 확인용 meta 태그만 있고 실제 adsbygoogle.js 로더가 없어서
+            심사 크롤러가 페이지에서 광고 코드를 찾지 못하는 상태였다. 로더는 한 번만 넣는다. */}
+        <Script
+          id="adsbygoogle-loader"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5378247298190063"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-H0BDK8VQLR"
@@ -214,10 +224,12 @@ export default function RootLayout({
               <a href="/capital-gains-tax" className="nav-link">양도소득세</a>
               <a href="/jeonwolse" className="nav-link">전월세전환</a>
               <a href="/board" className="nav-link">부동산 가이드</a>
+              <a href="/about" className="nav-link">소개</a>
             </div>
           </div>
         </nav>
         {children}
+        <SiteFooter />
       </body>
     </html>
   )

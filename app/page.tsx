@@ -444,7 +444,7 @@ export default function Page() {
               { id: 3, category: "전세·월세", title: "전세 vs 월세 — 2026년 금리 환경에서 어느 게 더 유리할까?" },
               { id: 5, category: "계약 가이드", title: "부동산 매매 계약 전 꼭 확인해야 할 체크리스트 10가지" },
             ].map((post) => (
-              <a key={post.id} href={`/board?id=${post.id}`} style={{
+              <a key={post.id} href={`/board/${post.id}`} style={{
                 display: "flex",
                 alignItems: "center",
                 gap: "12px",
@@ -474,17 +474,9 @@ export default function Page() {
           </div>
         </article>
 
-        {/* 푸터 */}
-        <footer style={{ marginTop: "24px", paddingTop: "16px", borderTop: "1px solid var(--border-color)", textAlign: "center" }}>
-          <nav style={{ display: "flex", justifyContent: "center", gap: "20px", flexWrap: "wrap" }}>
-            <a href="/privacy-policy" style={{ fontSize: "12px", color: "var(--text-muted)", textDecoration: "none" }}>개인정보 처리방침</a>
-            <a href="/terms-of-service" style={{ fontSize: "12px", color: "var(--text-muted)", textDecoration: "none" }}>이용약관</a>
-            <a href="/cookie-policy" style={{ fontSize: "12px", color: "var(--text-muted)", textDecoration: "none" }}>쿠키 정책</a>
-          </nav>
-          <p style={{ marginTop: "8px", fontSize: "11px", color: "var(--text-muted)" }}>
-            © 2026 · 문의: tlsfkaus0711@gmail.com
-          </p>
-        </footer>
+        {/* 푸터는 app/layout.tsx 의 SiteFooter 로 통합했다. 페이지마다 따로 두면
+            소개·연락처 같은 링크를 추가할 때 4곳을 동시에 고쳐야 하고, 게시판·정책
+            페이지에는 푸터가 아예 없어 사이트 전체에서 도달 못 하는 페이지가 생긴다. */}
       </div>
     </div>
   );
